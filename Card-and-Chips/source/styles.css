@@ -1,0 +1,195 @@
+:root {
+    --card-surface: #fff;
+    --card-box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
+    --subtitle-text-color: rgba(0, 0, 0, 0.54);
+    --background-theme: #f7f7f7;
+  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-height: 160px;
+    border-radius: 4px;
+    background: var(--card-surface);
+    box-shadow: var(--card-box-shadow);
+  
+  
+    /* background: black; */
+  }
+  .card-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: red; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-basis: 3rem;
+    flex-wrap: wrap;
+    
+  }
+  .card-showcase {
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  .body-main {
+     display: flex;
+
+    margin: 2rem;
+    gap: 2rem;
+   
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+    background: var(--background-theme);
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .image-container {
+    background: url('https://picsum.photos/200');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    border-radius: 4px 4px 0 0;
+  
+    flex-basis: 110px;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+    padding-left: 0.5rem;
+  }
+  .text-btn {
+    display: flex;
+  
+    justify-content: space-around;
+    background: green;
+  
+    gap: 0.5rem;
+  }
+  
+  .card-subtitle-2 {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+    letter-spacing: 0.0071428571em;
+    color: var(--subtitle-text-color);
+  }
+  
+  /* test overflow elipses */
+  
+  .headline-typography {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.0125em;
+    margin-bottom: 0;
+  }
+  .caption-typography{
+    font-family: Roboto,sans-serif;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+line-height: 1.25rem;
+font-weight: 400;
+text-decoration: inherit;
+text-transform: inherit;
+color:rgba(0,0,0,.54);
+  }
+   .caption-length{
+    padding: 0 0 8px;
+  }
+  .card-theme {
+    color: #6200ee;
+  }
+  
+  .card-fancy-border{
+    border-top-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+  }
+
+  .card-container-two{
+      display:flex;
+      flex-direction: column;
+      width:350px;
+      min-height:350px;
+      background-color:var(--background-theme);
+      border-radius: 4px;
+      box-shadow: var(--card-box-shadow);
+
+    
+
+      
+  }
+
+
+
+.image-tag{
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    /* //height: max(10rem, 25vh); */
+    
+    flex-basis: 59%;
+    
+}
+
+  /* .image-container-two{
+    background-image: url('https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg');
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width:160px;
+
+  } */
+
+  .text-wrap{
+    
+
+    
+    padding:0.875rem 0px 0.875rem 0.5rem;
+  }
+ 
+  .text-wrap>p{
+    margin-top: 0.5rem;
+  }
+  .chips-wrapper{
+    display: flex;
+    width: 400px;
+    background:red;
+    flex-wrap: wrap;
+    align-items:center;
+  }
+  .chips{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background:grey;
+    padding:0.4rem;
+    margin:0.4rem;
+    gap:2rem;
+    border-radius: 1.225rem;
+    
+  }
+
+  .btn-ion{
+    font-size: 1.225rem;
+  }
